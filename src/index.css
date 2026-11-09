@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Epilogue', system-ui, sans-serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-telemetry: 'Space Grotesk', monospace;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans, body {
+  font-family: var(--font-body);
+}
+
+.font-telemetry {
+  font-family: var(--font-telemetry);
+  font-feature-settings: "tnum" 1;
+}
+
+/* Custom scrollbar styling for botanical UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f2f4ee;
+}
+::-webkit-scrollbar-thumb {
+  background: #bfc9c5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #87beb0;
+}
+
+/* Subtle camera reticle pulse animation */
+@keyframes laserSweep {
+  0% { transform: translateY(0%); opacity: 0.8; }
+  50% { transform: translateY(320px); opacity: 1; }
+  100% { transform: translateY(0%); opacity: 0.8; }
+}
+
+.animate-laser {
+  animation: laserSweep 3s ease-in-out infinite;
+}

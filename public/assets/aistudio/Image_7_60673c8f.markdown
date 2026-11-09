@@ -1,0 +1,207 @@
+---
+name: Botanical Precision
+colors:
+  surface: '#f8faf4'
+  surface-dim: '#d8dbd5'
+  surface-bright: '#f8faf4'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f2f4ee'
+  surface-container: '#edefe9'
+  surface-container-high: '#e7e9e3'
+  surface-container-highest: '#e1e3dd'
+  on-surface: '#191c19'
+  on-surface-variant: '#404946'
+  inverse-surface: '#2e312d'
+  inverse-on-surface: '#eff1eb'
+  outline: '#707976'
+  outline-variant: '#bfc9c5'
+  surface-tint: '#31685c'
+  primary: '#00362d'
+  on-primary: '#ffffff'
+  primary-container: '#134e43'
+  on-primary-container: '#87beb0'
+  inverse-primary: '#9ad2c3'
+  secondary: '#006c49'
+  on-secondary: '#ffffff'
+  secondary-container: '#6cf8bb'
+  on-secondary-container: '#00714d'
+  tertiary: '#452900'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#633d00'
+  on-tertiary-container: '#f8a00f'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#b5eedf'
+  primary-fixed-dim: '#9ad2c3'
+  on-primary-fixed: '#00201a'
+  on-primary-fixed-variant: '#154f44'
+  secondary-fixed: '#6ffbbe'
+  secondary-fixed-dim: '#4edea3'
+  on-secondary-fixed: '#002113'
+  on-secondary-fixed-variant: '#005236'
+  tertiary-fixed: '#ffddb8'
+  tertiary-fixed-dim: '#ffb95f'
+  on-tertiary-fixed: '#2a1700'
+  on-tertiary-fixed-variant: '#653e00'
+  background: '#f8faf4'
+  on-background: '#191c19'
+  surface-variant: '#e1e3dd'
+typography:
+  display-lg:
+    fontFamily: Epilogue
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 48px
+    letterSpacing: -0.02em
+  display-lg-mobile:
+    fontFamily: Epilogue
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 40px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Epilogue
+    fontSize: 28px
+    fontWeight: '600'
+    lineHeight: 36px
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Epilogue
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 28px
+  headline-sm:
+    fontFamily: Epilogue
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+  label-lg:
+    fontFamily: Space Grotesk
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 18px
+    letterSpacing: 0.02em
+  label-md:
+    fontFamily: Space Grotesk
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+    letterSpacing: 0.04em
+  label-sm:
+    fontFamily: Space Grotesk
+    fontSize: 10px
+    fontWeight: '600'
+    lineHeight: 12px
+    letterSpacing: 0.06em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-tablet: 1.5rem
+  gutter-desktop: 2rem
+  margin: 1rem
+  margin-tablet: 2rem
+  margin-desktop: 3rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system is tailored for an intelligent botanical diagnosis and plant vitality platform. The brand personality blends scientific precision with organic warmth: calm, deeply knowledgeable, encouraging, and clinical without feeling sterile. 
+
+The aesthetic sits at the intersection of **Modern Organic Minimalism** and **Tactile Utility**:
+- **Clarity over Clutter:** High-density botanical diagnosis metrics must remain legible under bright outdoor sunlight or dim greenhouse conditions.
+- **Physical Connection:** Earthy neutrals offset digital precision, turning a smartphone into an ergonomic, modern field microscope and journal.
+- **Visual Tone:** Composed, empathetic, and authoritative. Diagnosis results avoid panic-inducing medical metaphors, opting for clear diagnostic severity levels framed through natural transitions (amber dormancy to vibrant recovery).
+
+## Colors
+
+The color system relies on biological and ecological reference points:
+- **Primary (`#134e43` - Deep Forest Spruce):** Grounds the interface with institutional authority, used for primary navigation, critical interactive states, structural framing, and primary text headers.
+- **Secondary (`#10b981` - Vital Emerald):** Represents vigor, optimal health, confirmed matches, and affirmative actions. Used for success metrics, healthy status badges, and active scan rings.
+- **Tertiary (`#f59e0b` - Sunlit Amber):** Acts as the primary warning tier for pest infestations, nutrient deficiencies, or hydration alerts. When escalated, a system coral (`#f43f5e`) handles irreversible tissue damage or terminal alerts.
+- **Neutral (`#f4f6f0` - Soft Limestone):** An organic, desaturated tint replacing stark white canvas backgrounds. Softens eye fatigue in direct sun and provides a high-contrast backing for botanical photography.
+
+Surface shifts use subtle tonal shifts from limestone to bleached parchment (`#ffffff`) for elevated diagnosis cards, ensuring high legibility and precise field identification.
+
+## Typography
+
+The typographic hierarchy establishes clear boundaries between botanical taxonomy, analytical telemetry, and narrative care instructions:
+- **Headlines (Epilogue):** Editorial and sculptured. Provides a human, curated publication feel for plant common names, system summaries, and major diagnosis headers.
+- **Body Text (Plus Jakarta Sans):** Highly legible, friendly grotesque. Accommodates multi-step treatment procedures, water schedules, and detailed pathology descriptions without visual fatigue.
+- **Data & Telemetry (Space Grotesk):** Applied to binomial Latin nomenclature (e.g., *Monstera deliciosa*), sensor telemetry (lux, soil humidity percentage), match probabilities, and scan confidence metrics.
+
+## Layout & Spacing
+
+This design system uses a strict mobile-first fluid grid structured around ergonomic single-hand interaction zones:
+- **Layout Grid:** 
+  - Mobile (0–599px): 4-column fluid grid, 16px margins, 16px gutters. Interactive elements cluster within the lower 60% viewport zone.
+  - Tablet (600–1023px): 8-column fluid grid, 32px margins, 24px gutters. Dual-pane inspection view (specimen photo left, diagnostic panel right).
+  - Desktop (1024px+): 12-column fixed container (max 1280px), 48px margins, 32px gutters.
+- **Rhythm:** Spacing follows an 8pt spatial cadence with a strict 4pt sub-grid for badge typography and tightly coupled sensor indicators.
+- **Ergonomics:** Safe area insets respect hardware camera cutouts and bottom gesture bars. Diagnostic capture viewports float UI controls 24px above system home indicators.
+
+## Elevation & Depth
+
+Visual hierarchy rejects exaggerated drop shadows in favor of **Tonal Layers** combined with **Low-Contrast Organic Outlines**:
+- **Layer 0 (Canvas):** Base background surface in `#f4f6f0`.
+- **Layer 1 (Card Default):** Crisp `#ffffff` container bordered by a delicate 1px stroke of tinted slate-forest (`rgba(19, 78, 67, 0.08)`). No drop shadow.
+- **Layer 2 (Elevated & Active Overlays):** Used for diagnosis bottom sheets, drawer panels, and active tooltips. Features a soft, organic ambient shadow: `0 12px 32px -8px rgba(19, 78, 67, 0.12)`.
+- **Camera Viewfinder Scrim:** Dynamic dark veil (`rgba(10, 28, 24, 0.65)`) with an integrated frosted blur (`backdrop-filter: blur(16px)`) to keep scanning controls legible when pointed against high-glare foliage.
+
+## Shapes
+
+The interface balances biological curvature with scientific structure:
+- **Base Corner Radius (`roundedness: 2`):** Primary interactive elements, cards, and input fields utilize an 8px (`0.5rem`) radius.
+- **Large Elements (`rounded-lg`):** Diagnosis sheets, modal dialogs, and photographic comparison frames expand to 16px (`1rem`).
+- **Interactive Tokens & Badges (`rounded-xl` / Full):** Filter chips, severity tags, and primary capture triggers use 24px (`1.5rem`) up to full pill shapes to indicate immediate tap affordance and soft tactile responsiveness.
+
+## Components
+
+### Buttons & Capture Controls
+- **Primary Action (Diagnose / Scan):** Forest green fill (`#134e43`) with white text, 52px height for thumb targeting, pill radius, paired with Space Grotesk semi-bold labels. On active press: scale down to 0.98 with subtle brightness reduction.
+- **Secondary Action:** Transparent base with a 1.5px solid border in `#134e43`, text tinted to match.
+- **Floating Camera Shutter:** 72px dual-ring button; outer ring in vital emerald (`#10b981`), white core, 4px internal spacer.
+
+### Diagnosis & Specimen Cards
+- **Structure:** Surface white background, 12px internal padding, 8px radius, subtle border.
+- **Card Header:** Epilogue headline for common plant name, Space Grotesk label for Latin genus, right-aligned severity indicator.
+- **Photographic Split:** High-aspect 1:1 image mask with rounded internal corners showing afflicted vs. healthy sample references.
+
+### Severity & Status Chips
+- **Low Severity (Healthy / Resolved):** Soft emerald background (`rgba(16, 185, 129, 0.12)`), solid emerald text (`#047857`), circle status dot.
+- **Medium Severity (Action Needed / Dehydrated):** Light amber background (`rgba(245, 158, 11, 0.14)`), dark amber text (`#b45309`).
+- **Critical Severity (Fungal / Pest Threat):** Coral background (`rgba(244, 63, 94, 0.14)`), deep crimson-coral text (`#be123c`).
+
+### Inputs & Botanical Filters
+- **Search & Input Fields:** 48px height, 8px radius, light cream fill (`#ecefe6`), resting border `rgba(19, 78, 67, 0.12)`. Focus shifts border to emerald (`#10b981`) with 2px outer glow.
+- **Selection Pills:** Horizontal scrollable row, unselected state in soft limestone, selected state in filled forest green with white text.
+
+### Telemetry & Vital Gauges
+- Specialized readouts for Sunlight, Soil Moisture, and Ambient Temperature: segmented linear bars with rounded ends (4px height) displaying safe vs. danger thresholds via gradient transitions.

@@ -1,0 +1,6 @@
+{
+  "name": "Botanical Precision",
+  "description": "Intelligent botanical diagnosis and plant vitality platform blending scientific precision with organic warmth for real-time plant pathology analysis, leaf health scanning, and treatment protocols.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
