@@ -1,0 +1,64 @@
+{
+  "common": {
+    "brand": "PlantDoctor",
+    "continue": "متابعة",
+    "directionChangeTitle": "يلزم إعادة التشغيل",
+    "directionChangeMessage": "يجب إعادة تشغيل التطبيق لتطبيق اتجاه القراءة الجديد.",
+    "restartNow": "إعادة التشغيل الآن",
+    "languageSaveError": "تعذّر حفظ اللغة. يُرجى المحاولة مرة أخرى."
+  },
+  "onboarding": {
+    "title": "مرحبًا بك في PlantDoctor",
+    "subtitle": "اختر لغتك للبدء."
+  },
+  "home": {
+    "title": "لنمنح نباتاتك عناية أفضل",
+    "subtitle": "يساعدك PlantDoctor على فهم نباتاتك والعناية بها.",
+    "profileLink": "فتح الإعدادات"
+  },
+  "profile": {
+    "title": "الإعدادات",
+    "languageTitle": "لغة التطبيق",
+    "languageDescription": "يمكنك تغيير هذا الاختيار في أي وقت."
+  },
+  "history": {
+    "scansCount_zero": "لا توجد تشخيصات",
+    "scansCount_one": "تشخيص واحد ({{count}})",
+    "scansCount_two": "تشخيصان ({{count}})",
+    "scansCount_few": "{{count}} تشخيصات",
+    "scansCount_many": "{{count}} تشخيصًا",
+    "scansCount_other": "{{count}} تشخيص"
+  },
+  "errors": {
+    "notFoundTitle": "الصفحة غير موجودة",
+    "notFoundMessage": "هذه الصفحة غير موجودة.",
+    "goHome": "العودة إلى الرئيسية",
+    "directionReloadFailedTitle": "يلزم إعادة التشغيل",
+    "directionReloadFailedMessage": "أغلق التطبيق ثم افتحه مجددًا لتطبيق اتجاه القراءة الجديد.",
+    "profileSyncFailedTitle": "تعذّرت المزامنة",
+    "profileSyncFailedMessage": "تعذّر تحميل لغة الملف الشخصي. تحقق من اتصالك ثم أعد المحاولة.",
+    "api": {
+      "IMAGE_INVALID": "تعذّر تحليل هذه الصورة. جرّب صورة أخرى.",
+      "IMAGE_TOO_LARGE": "حجم الصورة أكبر من المسموح.",
+      "UNSUPPORTED_FORMAT": "تنسيق الصورة هذا غير مدعوم.",
+      "NOT_A_PLANT": "لم يُعثر على نبات في هذه الصورة.",
+      "LLM_TIMEOUT": "استغرق التحليل وقتًا طويلًا. يُرجى المحاولة مجددًا.",
+      "LLM_INVALID_RESPONSE": "تعذّر فهم نتيجة التحليل. يُرجى المحاولة مجددًا.",
+      "LLM_UPSTREAM_ERROR": "خدمة التحليل غير متاحة مؤقتًا.",
+      "LLM_PROVIDER_UNAVAILABLE": "خدمة التحليل غير مُهيأة.",
+      "SUPABASE_UNAVAILABLE": "خدمة البيانات غير متاحة مؤقتًا.",
+      "RATE_LIMITED": "عدد الطلبات كبير. انتظر قليلًا ثم أعد المحاولة.",
+      "QUOTA_EXCEEDED": "بلغت الحد اليومي للتشخيصات.",
+      "UNAUTHORIZED": "سجّل الدخول للمتابعة.",
+      "NOT_FOUND": "العنصر المطلوب غير موجود.",
+      "AUTHENTICATION_NOT_CONFIGURED": "المصادقة غير متاحة.",
+      "VALIDATION_ERROR": "بعض المعلومات غير صالحة.",
+      "HTTP_ERROR": "تعذّر إكمال الطلب. يُرجى المحاولة مجددًا.",
+      "INTERNAL_ERROR": "حدث خطأ غير متوقع."
+    }
+  },
+  "tabs": {
+    "home": "الرئيسية",
+    "profile": "الإعدادات"
+  }
+}

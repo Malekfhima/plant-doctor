@@ -1,0 +1,64 @@
+{
+  "common": {
+    "brand": "PlantDoctor",
+    "continue": "Continuer",
+    "directionChangeTitle": "Redémarrage nécessaire",
+    "directionChangeMessage": "Pour appliquer le nouveau sens de lecture, l’application doit redémarrer.",
+    "restartNow": "Redémarrer",
+    "languageSaveError": "Impossible d’enregistrer la langue. Réessaie."
+  },
+  "onboarding": {
+    "title": "Bienvenue chez PlantDoctor",
+    "subtitle": "Choisis ta langue pour commencer."
+  },
+  "home": {
+    "title": "Tes plantes, en meilleure santé",
+    "subtitle": "PlantDoctor t’aide à comprendre et à prendre soin de tes plantes.",
+    "profileLink": "Ouvrir les paramètres"
+  },
+  "profile": {
+    "title": "Paramètres",
+    "languageTitle": "Langue de l’application",
+    "languageDescription": "Tu pourras modifier ce choix à tout moment."
+  },
+  "history": {
+    "scansCount_zero": "Aucun diagnostic",
+    "scansCount_one": "{{count}} diagnostic",
+    "scansCount_two": "{{count}} diagnostic",
+    "scansCount_few": "{{count}} diagnostics",
+    "scansCount_many": "{{count}} diagnostics",
+    "scansCount_other": "{{count}} diagnostics"
+  },
+  "errors": {
+    "notFoundTitle": "Introuvable",
+    "notFoundMessage": "Cette page n’existe pas.",
+    "goHome": "Retour à l’accueil",
+    "directionReloadFailedTitle": "Redémarrage requis",
+    "directionReloadFailedMessage": "Ferme puis relance l’application pour appliquer le nouveau sens de lecture.",
+    "profileSyncFailedTitle": "Synchronisation impossible",
+    "profileSyncFailedMessage": "La langue du profil n’a pas pu être récupérée. Vérifie ta connexion et réessaie.",
+    "api": {
+      "IMAGE_INVALID": "Cette image ne peut pas être analysée. Essaie une autre photo.",
+      "IMAGE_TOO_LARGE": "L’image est trop volumineuse.",
+      "UNSUPPORTED_FORMAT": "Le format de cette image n’est pas pris en charge.",
+      "NOT_A_PLANT": "Aucune plante n’a été détectée sur cette image.",
+      "LLM_TIMEOUT": "L’analyse a pris trop de temps. Réessaie.",
+      "LLM_INVALID_RESPONSE": "L’analyse n’a pas pu être interprétée. Réessaie.",
+      "LLM_UPSTREAM_ERROR": "Le service d’analyse est temporairement indisponible.",
+      "LLM_PROVIDER_UNAVAILABLE": "Le service d’analyse n’est pas configuré.",
+      "SUPABASE_UNAVAILABLE": "Le service de données est temporairement indisponible.",
+      "RATE_LIMITED": "Trop de requêtes. Attends un instant avant de réessayer.",
+      "QUOTA_EXCEEDED": "Tu as atteint ta limite quotidienne de diagnostics.",
+      "UNAUTHORIZED": "Connecte-toi pour continuer.",
+      "NOT_FOUND": "L’élément demandé est introuvable.",
+      "AUTHENTICATION_NOT_CONFIGURED": "L’authentification n’est pas disponible.",
+      "VALIDATION_ERROR": "Certaines informations sont invalides.",
+      "HTTP_ERROR": "La requête n’a pas abouti. Réessaie.",
+      "INTERNAL_ERROR": "Une erreur inattendue s’est produite."
+    }
+  },
+  "tabs": {
+    "home": "Accueil",
+    "profile": "Paramètres"
+  }
+}

@@ -1,0 +1,126 @@
+@baseUrl = http://localhost:8000
+@accessToken = replace-with-a-supabase-access-token
+@plantId = replace-with-a-plant-uuid
+@scanId = replace-with-a-scan-uuid
+@imagePath = C:/path/to/plant.jpg
+
+### Liveness
+GET {{baseUrl}}/health
+
+### Dependency readiness
+GET {{baseUrl}}/health/ready
+
+### Analyze and save an image
+POST {{baseUrl}}/api/v1/analyze
+Authorization: Bearer {{accessToken}}
+Content-Type: multipart/form-data; boundary=PlantDoctorBoundary
+
+--PlantDoctorBoundary
+Content-Disposition: form-data; name="image"; filename="plant.jpg"
+Content-Type: image/jpeg
+
+< {{imagePath}}
+--PlantDoctorBoundary
+Content-Disposition: form-data; name="language"
+
+fr
+--PlantDoctorBoundary
+Content-Disposition: form-data; name="plant_hint"
+
+basil
+--PlantDoctorBoundary
+Content-Disposition: form-data; name="save"
+
+true
+--PlantDoctorBoundary--
+
+### Analyze without saving to history
+POST {{baseUrl}}/api/v1/analyze
+Authorization: Bearer {{accessToken}}
+Content-Type: multipart/form-data; boundary=PlantDoctorBoundary
+
+--PlantDoctorBoundary
+Content-Disposition: form-data; name="image"; filename="plant.jpg"
+Content-Type: image/jpeg
+
+< {{imagePath}}
+--PlantDoctorBoundary
+Content-Disposition: form-data; name="language"
+
+en
+--PlantDoctorBoundary
+Content-Disposition: form-data; name="save"
+
+false
+--PlantDoctorBoundary--
+
+### List saved scans
+GET {{baseUrl}}/api/v1/history?limit=20&status=diseased
+Authorization: Bearer {{accessToken}}
+
+### Search saved scans
+GET {{baseUrl}}/api/v1/history?q=basil&limit=10
+Authorization: Bearer {{accessToken}}
+
+### Get or delete a scan
+GET {{baseUrl}}/api/v1/history/{{scanId}}
+Authorization: Bearer {{accessToken}}
+
+###
+DELETE {{baseUrl}}/api/v1/history/{{scanId}}
+Authorization: Bearer {{accessToken}}
+
+### List or create plants
+GET {{baseUrl}}/api/v1/plants
+Authorization: Bearer {{accessToken}}
+
+###
+POST {{baseUrl}}/api/v1/plants
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "name": "Kitchen basil",
+  "species": "Ocimum basilicum",
+  "notes": "South-facing window"
+}
+
+### Get, update, or delete a plant
+GET {{baseUrl}}/api/v1/plants/{{plantId}}
+Authorization: Bearer {{accessToken}}
+
+###
+PATCH {{baseUrl}}/api/v1/plants/{{plantId}}
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "notes": "Water the soil, not the leaves"
+}
+
+###
+DELETE {{baseUrl}}/api/v1/plants/{{plantId}}
+Authorization: Bearer {{accessToken}}
+
+### Link a scan to a plant
+POST {{baseUrl}}/api/v1/plants/{{plantId}}/scans/{{scanId}}
+Authorization: Bearer {{accessToken}}
+
+### Read or update the current profile
+GET {{baseUrl}}/api/v1/me
+Authorization: Bearer {{accessToken}}
+
+###
+PATCH {{baseUrl}}/api/v1/me
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "language": "en",
+  "theme": "system",
+  "notifications": true
+}
+
+### Destructive: delete the current account and its data
+DELETE {{baseUrl}}/api/v1/me
+Authorization: Bearer {{accessToken}}

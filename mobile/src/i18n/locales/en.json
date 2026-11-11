@@ -1,0 +1,64 @@
+{
+  "common": {
+    "brand": "PlantDoctor",
+    "continue": "Continue",
+    "directionChangeTitle": "Restart required",
+    "directionChangeMessage": "The app needs to restart to apply the new reading direction.",
+    "restartNow": "Restart now",
+    "languageSaveError": "Could not save your language. Please try again."
+  },
+  "onboarding": {
+    "title": "Welcome to PlantDoctor",
+    "subtitle": "Choose your language to get started."
+  },
+  "home": {
+    "title": "Healthier plants start here",
+    "subtitle": "PlantDoctor helps you understand and care for your plants.",
+    "profileLink": "Open settings"
+  },
+  "profile": {
+    "title": "Settings",
+    "languageTitle": "App language",
+    "languageDescription": "You can change this at any time."
+  },
+  "history": {
+    "scansCount_zero": "No diagnoses",
+    "scansCount_one": "{{count}} diagnosis",
+    "scansCount_two": "{{count}} diagnoses",
+    "scansCount_few": "{{count}} diagnoses",
+    "scansCount_many": "{{count}} diagnoses",
+    "scansCount_other": "{{count}} diagnoses"
+  },
+  "errors": {
+    "notFoundTitle": "Not found",
+    "notFoundMessage": "This page does not exist.",
+    "goHome": "Go to home",
+    "directionReloadFailedTitle": "Restart required",
+    "directionReloadFailedMessage": "Close and reopen the app to apply the new reading direction.",
+    "profileSyncFailedTitle": "Could not synchronize",
+    "profileSyncFailedMessage": "The profile language could not be loaded. Check your connection and try again.",
+    "api": {
+      "IMAGE_INVALID": "This image cannot be analyzed. Try another photo.",
+      "IMAGE_TOO_LARGE": "The image is too large.",
+      "UNSUPPORTED_FORMAT": "This image format is not supported.",
+      "NOT_A_PLANT": "No plant was detected in this image.",
+      "LLM_TIMEOUT": "The analysis took too long. Please try again.",
+      "LLM_INVALID_RESPONSE": "The analysis could not be interpreted. Please try again.",
+      "LLM_UPSTREAM_ERROR": "The analysis service is temporarily unavailable.",
+      "LLM_PROVIDER_UNAVAILABLE": "The analysis service is not configured.",
+      "SUPABASE_UNAVAILABLE": "The data service is temporarily unavailable.",
+      "RATE_LIMITED": "Too many requests. Wait a moment and try again.",
+      "QUOTA_EXCEEDED": "You have reached your daily diagnosis limit.",
+      "UNAUTHORIZED": "Sign in to continue.",
+      "NOT_FOUND": "The requested item could not be found.",
+      "AUTHENTICATION_NOT_CONFIGURED": "Authentication is not available.",
+      "VALIDATION_ERROR": "Some information is invalid.",
+      "HTTP_ERROR": "The request failed. Please try again.",
+      "INTERNAL_ERROR": "An unexpected error occurred."
+    }
+  },
+  "tabs": {
+    "home": "Home",
+    "profile": "Settings"
+  }
+}

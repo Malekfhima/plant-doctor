@@ -1,4 +1,9 @@
 node_modules/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
 build/
 dist/
 coverage/
@@ -6,3 +11,4 @@ coverage/
 *.log
 .env*
 !.env.example
+!backend/.env.example
